@@ -1,5 +1,8 @@
 <h2>Formularios de Angular</h2>
 <app-button (click)="onPathValue()">Agregar Texto</app-button>
 <form [formGroup]="form" novalidate autocomplete="off" (ngSubmit)="onSubmit()">
-    <app-input formControlName="input"></app-input>
+    <app-form-field >
+        <app-input formControlName="input"></app-input>
+    </app-form-field>
+    
 </form>
